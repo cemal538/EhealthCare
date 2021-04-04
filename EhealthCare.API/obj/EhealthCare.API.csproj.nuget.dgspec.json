@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\W10\\EhealtCare\\EhealthCare.API\\EhealthCare.API.csproj": {}
+    "C:\\Users\\W10\\EhealtCare\\EhealthCare.API\\EhealthCare.API.csproj": {}
   },
   "projects": {
-    "c:\\Users\\W10\\EhealtCare\\EhealthCare.API\\EhealthCare.API.csproj": {
+    "C:\\Users\\W10\\EhealtCare\\EhealthCare.API\\EhealthCare.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\W10\\EhealtCare\\EhealthCare.API\\EhealthCare.API.csproj",
+        "projectUniqueName": "C:\\Users\\W10\\EhealtCare\\EhealthCare.API\\EhealthCare.API.csproj",
         "projectName": "EhealthCare.API",
-        "projectPath": "c:\\Users\\W10\\EhealtCare\\EhealthCare.API\\EhealthCare.API.csproj",
+        "projectPath": "C:\\Users\\W10\\EhealtCare\\EhealthCare.API\\EhealthCare.API.csproj",
         "packagesPath": "C:\\Users\\W10\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\W10\\EhealtCare\\EhealthCare.API\\obj\\",
+        "outputPath": "C:\\Users\\W10\\EhealtCare\\EhealthCare.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -67,7 +67,7 @@
             },
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
-              "version": "[6.9.0, )"
+              "version": "[*, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Hxevgqe9ly07nhTh2fSOA6KdkzYLgfsD/0ppqR3E89vSuiWKFVqvWYkAWhO2p7RzID+OBpC+uPMjB0VoWQIQZg==",
+  "dgSpecHash": "uQ9lb3kXCjzRcMSAHmD5nx3/uou3LcqLlwLUCDBCUKzUA6YcbmYCSxsfUXZ7SVaeEuUSO/OL0FXR//OkCGBILw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\W10\\EhealtCare\\EhealthCare.API\\EhealthCare.API.csproj",
+  "projectFilePath": "C:\\Users\\W10\\EhealtCare\\EhealthCare.API\\EhealthCare.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\W10\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\W10\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.2\\microsoft.aspnetcore.authentication.jwtbearer.5.0.2.nupkg.sha512",
