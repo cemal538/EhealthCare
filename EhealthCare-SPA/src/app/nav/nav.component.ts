@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AlertifyService } from '../_services/alertify.service';
 import { AuthService } from '../_services/auth.service';
 
@@ -16,7 +17,7 @@ export class NavComponent implements OnInit {
   z = 0;
   a = 0;
 
-  constructor(public authService: AuthService, private alertify: AlertifyService) { }
+  constructor(public authService: AuthService, private alertify: AlertifyService, private router: Router) { }
 
   // tslint:disable-next-line:typedef
   ngOnInit() {
@@ -46,8 +47,9 @@ export class NavComponent implements OnInit {
       this.alertify.success('Logged in as admin successfully');
     }, error => {
       this.alertify.error('Failed to login as admin');
+    }, () => {
+      this.router.navigate(['/add-doctor']);
     });
-    this.y = 1;
 
   }
 
@@ -57,6 +59,8 @@ export class NavComponent implements OnInit {
       this.alertify.success('Logged in as doctor successfully');
     }, error => {
       this.alertify.error('Failed to login as doctor');
+    }, () => {
+      this.router.navigate(['/details']);
     });
   }
 
@@ -66,6 +70,8 @@ export class NavComponent implements OnInit {
      this.alertify.success('Logged in as patient successfully');
     }, error => {
       this.alertify.error('Failed to login as patient');
+    }, () => {
+      this.router.navigate(['/view-doctors']);
     });
 
 
@@ -95,6 +101,7 @@ export class NavComponent implements OnInit {
   logout(){
     localStorage.removeItem('token');
     this.alertify.message('logged out');
+    this.router.navigate(['/home']);
 
   }
 
@@ -103,6 +110,7 @@ export class NavComponent implements OnInit {
     localStorage.removeItem('token');
     this.alertify.message('logged out');
     this.y = 0;
+    this.router.navigate(['/home']);
 
   }
 
@@ -111,6 +119,7 @@ export class NavComponent implements OnInit {
     localStorage.removeItem('token');
     this.alertify.message('logged out');
     this.z = 0;
+    this.router.navigate(['/home']);
   }
 
   // tslint:disable-next-line:typedef
@@ -118,6 +127,7 @@ export class NavComponent implements OnInit {
     localStorage.removeItem('token');
     this.alertify.message('logged out');
     this.a = 0;
+    this.router.navigate(['/home']);
   }
 
   // tslint:disable-next-line:typedef

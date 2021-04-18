@@ -42,7 +42,13 @@ namespace EhealthCare.API.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("Address")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("DoctorName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("LastActive")
                         .HasColumnType("TEXT");
 
                     b.Property<byte[]>("PasswordHash")
@@ -50,6 +56,12 @@ namespace EhealthCare.API.Migrations
 
                     b.Property<byte[]>("PasswordSalt")
                         .HasColumnType("BLOB");
+
+                    b.Property<int>("Phonenumber")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("TypeofDoctor")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("DoctorId");
 
@@ -62,6 +74,12 @@ namespace EhealthCare.API.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("Address")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("LastActive")
+                        .HasColumnType("TEXT");
+
                     b.Property<byte[]>("PasswordHash")
                         .HasColumnType("BLOB");
 
@@ -70,6 +88,9 @@ namespace EhealthCare.API.Migrations
 
                     b.Property<string>("PatientName")
                         .HasColumnType("TEXT");
+
+                    b.Property<int>("Phonenumber")
+                        .HasColumnType("INTEGER");
 
                     b.HasKey("PatientId");
 

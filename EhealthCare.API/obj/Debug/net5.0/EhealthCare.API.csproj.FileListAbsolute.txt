@@ -80,3 +80,5 @@ C:\Users\W10\EhealtCare\EhealthCare.API\obj\Debug\net5.0\staticwebassets\Ehealth
 C:\Users\W10\EhealtCare\EhealthCare.API\obj\Debug\net5.0\staticwebassets\EhealthCare.API.StaticWebAssets.xml
 C:\Users\W10\EhealtCare\EhealthCare.API\obj\Debug\net5.0\scopedcss\bundle\EhealthCare.API.styles.css
 C:\Users\W10\EhealtCare\EhealthCare.API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\W10\EhealtCare\EhealthCare.API\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\W10\EhealtCare\EhealthCare.API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
+  <a class="navbar-brand" [routerLink]="['/home']"  >EhealthCare</a>
   
- 
+  
       
 
       <div  *ngIf="loggedInaspatient() || loggedInasadmin() || loggedInasdoctor()" class="dropdown"  >
@@ -8,11 +9,7 @@
           
          Welcome 
         </a>
-        <div class="dropdown-menu" >
-          <a class="dropdown-item" href="#"><i class="fa fa-user"></i>Edit Profile</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i> Logout</a>
-        </div>
+        
       </div>
       
       
@@ -40,21 +37,21 @@
       </div>
 
       <ul *ngIf="loggedInasadmin() && this.y == 1"  class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link "  href="#">Add Doctor
+        <li class="nav-item" routerLinkActive="router-link-active">
+          <a class="nav-link "  [routerLink]="['/add-doctor']" >Add Doctor
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Add Patient</a>
+        <li class="nav-item" routerLinkActive="router-link-active">
+          <a class="nav-link" [routerLink]="['/add-patient']"  >Add Patient</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#">View Doctors</a>
+        <li class="nav-item" routerLinkActive="router-link-active">
+          <a class="nav-link " [routerLink]="['/view-doctors']"  >View Doctors</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#">View Patients</a>
+        <li class="nav-item" routerLinkActive="router-link-active">
+          <a class="nav-link " [routerLink]="['/view-patient']"  >View Patients</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#">View Feedback</a>
+        <li class="nav-item" routerLinkActive="router-link-active">
+          <a class="nav-link " [routerLink]="['/view-feedback']"  >View Feedback</a>
         </li>
         <li class="nav-item">
           <a class="nav-link " (click)="logoutadmin()">Logout</a>
@@ -76,14 +73,14 @@
 
       <ul *ngIf="loggedInasdoctor() && this.z == 1"  class="navbar-nav mr-auto">
        
-        <li class="nav-item">
-          <a class="nav-link " href="#">View Doctors</a>
+        <li class="nav-item" routerLinkActive="router-link-active">
+          <a class="nav-link "[routerLink]="['/details']"  >Details</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#">View Patients</a>
+        <li class="nav-item" routerLinkActive="router-link-active">
+          <a class="nav-link " [routerLink]="['/view-patients']"  >View Patients</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#">View Feedback</a>
+        <li class="nav-item" routerLinkActive="router-link-active" >
+          <a class="nav-link " [routerLink]="['/chat-with-patients']" >Chat with patients</a>
         </li>
         <li class="nav-item">
           <a class="nav-link " (click)="logoutdoctor()">Logout</a>
@@ -102,10 +99,15 @@
       </div>
 
       <ul *ngIf="loggedInaspatient() && this.a == 1"  class="navbar-nav mr-auto">
-       
-     
-        <li class="nav-item">
-          <a class="nav-link " href="#">View Feedback</a>
+        <li class="nav-item" routerLinkActive="router-link-active">
+          <a class="nav-link " [routerLink]="['/view-doctors']"  >View Doctors</a>
+        </li>
+        <li class="nav-item" routerLinkActive="router-link-active">
+          <a class="nav-link " [routerLink]="['/chat-with-doctor']"  >Chat With Doctor</a>
+        </li>
+        
+        <li class="nav-item" routerLinkActive="router-link-active" >
+          <a class="nav-link " [routerLink]="['/give-feedback']"  >Give Feedback</a>
         </li>
         <li class="nav-item">
           <a class="nav-link " (click)="logoutpatient()">Logout</a>

@@ -59,4 +59,9 @@ loginpatient(model3: any) {
 }
 
 
+// tslint:disable-next-line:typedef
+loggedIn() {
+  const  token = localStorage.getItem('token');
+  return token != null && !this.jwtHelper.isTokenExpired(token);
+}
 }

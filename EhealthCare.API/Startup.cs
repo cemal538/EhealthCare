@@ -16,6 +16,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using AutoMapper;
 
 namespace EhealthCare.API
 {
@@ -39,7 +40,9 @@ namespace EhealthCare.API
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "EhealthCare.API", Version = "v1" });
             });
             services.AddCors();
+            services.AddAutoMapper();
             services.AddScoped<IAuthRepository, AuthRepository>();
+            services.AddScoped<IHealthCareRepository, EhealthCareRepository>();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(options => {
                 options.TokenValidationParameters = new TokenValidationParameters
